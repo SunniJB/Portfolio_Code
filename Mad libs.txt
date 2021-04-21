@@ -1,0 +1,61 @@
+using System;
+
+namespace MadLibs
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /*
+      This program uses user input to make a story.
+      Author: Sunny
+      */
+
+
+      // Let the user know that the program is starting:
+Console.Write("Welcome to AdLibs! The program is starting! ");
+
+      // Give the Mad Lib a title:
+      string title = "Title: Coding AdLibs";
+
+      Console.WriteLine(title);
+      // Define user input and variables:
+Console.Write("Enter a name: ");
+string name = Console.ReadLine();
+Console.Write("Enter a feeling: ");
+string feeling = Console.ReadLine();
+Console.Write("Enter an adjective: ");
+string adjective1 = Console.ReadLine();
+Console.Write("Enter another adjective: ");
+string adjective2 = Console.ReadLine();
+Console.Write("Now we need a verb: ");
+string verb = Console.ReadLine();
+Console.Write("And now we need two nouns! Enter the first one here: ");
+string noun1 = Console.ReadLine();
+Console.Write("And the second one here: ");
+string noun2 = Console.ReadLine();
+Console.Write("Alright! Thank you for all of that. Now I'm going to ask you for seven rapid-fire inputs, so get ready. ");
+Console.Write("An animal: ");
+string animal = Console.ReadLine();
+Console.Write("A food item: ");
+string food = Console.ReadLine();
+Console.Write("A fruit (edible, not derogatory): ");
+string fruit = Console.ReadLine();
+Console.Write("A superhero: ");
+string hero = Console.ReadLine();
+Console.Write("A country: ");
+string country = Console.ReadLine();
+Console.Write("A dessert: ");
+string dessert = Console.ReadLine();
+Console.Write("And lasty, a year: ");
+string year = Console.ReadLine();
+      // The template for the story:
+
+      string story = $"This morning {name} woke up feeling {feeling}. 'It is going to be a {adjective1} day!' Outside, a bunch of {animal}s were protesting to keep {food} in stores. They began to {verb} to the rhythm of the {noun1}, which made all the {fruit}s very {adjective2}. Concerned, {name} texted {hero}, who flew {name} to {country} and dropped {name} in a puddle of frozen {dessert}. {name} woke up in the year {year}, in a world where {noun2}s ruled the world.";
+Console.WriteLine(story);
+
+      // Print the story:
+
+    }
+  }
+}
